@@ -1,0 +1,11 @@
+@import "animations.scss";
+@import "styles.scss";
+@import "pallet.scss";
+@import "fonts.scss";
+@import "header.scss";
+@import "navbar.scss";
+@import "footer.scss";
+
+html {
+    scroll-behavior: smooth;
+}
