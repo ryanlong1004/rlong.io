@@ -22,7 +22,7 @@ function Contact() {
           <div className="col-lg-8 mx-auto">
             <form
               id="contactForm"
-              name="rlong.io Contact Form"
+              name="Contact Form"
               method="POST"
               data-netlify-recaptcha="true"
               data-netlify="true"
