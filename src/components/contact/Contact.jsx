@@ -29,7 +29,7 @@ function Contact() {
             >
               <div className="control-group">
                 <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label name="Name">Name</label>
+                  <label>Name</label>
                   <input
                     className="form-control"
                     id="name"
@@ -44,7 +44,7 @@ function Contact() {
               </div>
               <div className="control-group">
                 <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label name="Email">Email Address</label>
+                  <label>Email Address</label>
                   <input
                     className="form-control"
                     id="email"
@@ -59,7 +59,7 @@ function Contact() {
               </div>
               <div className="control-group">
                 <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label name="Message">Message</label>
+                  <label>Message</label>
                   <textarea
                     className="form-control"
                     id="message"
