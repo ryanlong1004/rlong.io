@@ -22,7 +22,7 @@ function Contact() {
           <div className="col-lg-8 mx-auto">
             <form
               id="contactForm"
-              name="Contact Form"
+              name="Contact"
               method="POST"
               data-netlify-recaptcha="true"
               data-netlify="true"
