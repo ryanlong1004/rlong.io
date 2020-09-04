@@ -33,7 +33,7 @@ function Contact() {
                   <input
                     className="form-control"
                     id="name"
-                    name="name"
+                    name="Name"
                     type="text"
                     placeholder="Name"
                     required="required"
@@ -48,7 +48,7 @@ function Contact() {
                   <input
                     className="form-control"
                     id="email"
-                    name="email"
+                    name="Email"
                     type="email"
                     placeholder="Email Address"
                     required="required"
@@ -63,7 +63,7 @@ function Contact() {
                   <textarea
                     className="form-control"
                     id="message"
-                    name="message"
+                    name="Message"
                     rows="5"
                     placeholder="Message"
                     required="required"
