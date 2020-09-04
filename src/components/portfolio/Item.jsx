@@ -66,11 +66,11 @@ function Modal(props) {
                     <div className="divider-custom-line"></div>
                   </div>
                   {/* <!-- Portfolio Modal - Image--> */}
-                  <img
+                  {/* <img
                     className="img-fluid rounded mb-5"
                     src={require(`./img/${props.data.name}`)}
                     alt="This is an"
-                  />
+                  /> */}
                   {/* <!-- Portfolio Modal - Text--> */}
                   <p className="mb-5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
