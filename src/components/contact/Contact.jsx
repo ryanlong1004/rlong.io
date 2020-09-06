@@ -75,11 +75,6 @@ function Contact() {
               </div>
               <br />
               <div id="success"></div>
-              <div className="control-group">
-                <div className="form group controls mb-0 pb-2">
-                  <div data-netlify-recaptcha="true"></div>
-                </div>
-              </div>
               <div className="form-group">
                 <button
                   className="btn btn-primary btn-xl"
