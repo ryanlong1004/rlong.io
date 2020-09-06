@@ -63,35 +63,15 @@
 
   <body>
     <!-- A little help for the Netlify bots if you're not using a SSG -->
-    <form name="contact" netlify  data-netlify-recaptcha="true"
-              data-netlify="true" hidden>
-      <input
-        className="form-control"
-        id="name"
-        name="Name"
-        type="text"
-        placeholder="Name"
-        required="required"
-        data-validation-required-message="Please enter your name."
-      />
-      <input
-        className="form-control"
-        id="email"
-        name="Email"
-        type="email"
-        placeholder="Email Address"
-        required="required"
-        data-validation-required-message="Please enter your email address."
-      />
-      <textarea
-        className="form-control"
-        id="message"
-        name="Message"
-        rows="5"
-        placeholder="Message"
-        required="required"
-        data-validation-required-message="Please enter a message."
-      ></textarea>
+    <form
+      name="contact"
+      data-netlify-recaptcha="true"
+      data-netlify="true"
+      hidden
+    >
+      <input name="Name" type="text" />
+      <input name="Email" type="email" />
+      <textarea name="Message"></textarea>
     </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
