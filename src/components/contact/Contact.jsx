@@ -20,55 +20,22 @@ function Contact() {
         {/* <!-- Contact Section Form--> */}
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            <form
-              id="contactForm"
-              name="Contact"
-              method="POST"
-              data-netlify-recaptcha="true"
-              data-netlify="true"
-            >
+            <form id="contactForm" name="contact" method="POST">
               <div className="control-group">
                 <div className="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Name</label>
-                  <input
-                    className="form-control"
-                    id="name"
-                    name="Name"
-                    type="text"
-                    placeholder="Name"
-                    required="required"
-                    data-validation-required-message="Please enter your name."
-                  />
                   <p className="help-block text-danger"></p>
                 </div>
               </div>
               <div className="control-group">
                 <div className="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Email Address</label>
-                  <input
-                    className="form-control"
-                    id="email"
-                    name="Email"
-                    type="email"
-                    placeholder="Email Address"
-                    required="required"
-                    data-validation-required-message="Please enter your email address."
-                  />
                   <p className="help-block text-danger"></p>
                 </div>
               </div>
               <div className="control-group">
                 <div className="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Message</label>
-                  <textarea
-                    className="form-control"
-                    id="message"
-                    name="Message"
-                    rows="5"
-                    placeholder="Message"
-                    required="required"
-                    data-validation-required-message="Please enter a message."
-                  ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
               </div>
