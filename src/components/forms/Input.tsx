@@ -4,7 +4,7 @@ import "../../styles/main.scss";
 type InputProps = {
   label: string;
   id: string;
-  type: string;
+  name: string;
   placeholder: string;
   required: boolean;
   validationMessage: string;
@@ -13,10 +13,7 @@ type InputProps = {
 class Input extends React.Component<InputProps> {
   constructor(props: InputProps) {
     super(props);
-    this.state = {
-      headerDidMount: false,
-      isUserInHeader: true,
-    };
+    this.state = {};
   }
 
   render() {
@@ -27,11 +24,11 @@ class Input extends React.Component<InputProps> {
           <input
             className="form-control"
             id={this.props.id}
-            name="Name"
-            type={this.props.type}
+            name={this.props.name}
+            type="text"
             placeholder={this.props.placeholder}
-            required={true}
-            data-validation-required-message="Please enter your name."
+            required={this.props.required}
+            data-validation-required-message={this.props.validationMessage}
           />
           <p className="help-block text-danger"></p>
         </div>
@@ -40,4 +37,4 @@ class Input extends React.Component<InputProps> {
   }
 }
 
-export { Input };
+export default Input;

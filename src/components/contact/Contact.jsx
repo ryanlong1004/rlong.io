@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/main.scss";
-import { Input } from "./Input";
+import { Form, Input, Email, TextArea } from "../forms/Components";
 
 function Contact() {
   return (
@@ -21,52 +21,32 @@ function Contact() {
         {/* <!-- Contact Section Form--> */}
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            <form
-              id="contactForm"
-              name="contact"
-              method="POST"
-              data-netlify-recaptcha="true"
-              data-netlify="true"
-            >
-              <input type="hidden" name="form-name" value="contact" />
+            <Form id="contactForm" method="POST" name="contact">
               <Input
                 label="Name"
                 id="name"
-                type="text"
+                name="Name"
                 placeholder="Name"
                 required={true}
                 validationMessage="Please enter your name"
               />
-              <div className="control-group">
-                <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Email Address</label>
-                  <input
-                    className="form-control"
-                    id="email"
-                    name="Email"
-                    type="email"
-                    placeholder="Email Address"
-                    required="required"
-                    data-validation-required-message="Please enter your email address."
-                  />
-                  <p className="help-block text-danger"></p>
-                </div>
-              </div>
-              <div className="control-group">
-                <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Message</label>
-                  <textarea
-                    className="form-control"
-                    id="message"
-                    name="Message"
-                    rows="5"
-                    placeholder="Message"
-                    required="required"
-                    data-validation-required-message="Please enter a message."
-                  ></textarea>
-                  <p className="help-block text-danger"></p>
-                </div>
-              </div>
+              <Email
+                label="Email Address"
+                id="email"
+                name="Email"
+                placeholder="Email Address"
+                required={true}
+                validationMessage="Please enter your email address"
+              />
+              <TextArea
+                label="Message"
+                id="message"
+                name="Message"
+                placeholder="Message"
+                rows={5}
+                required={true}
+                validationMessage="Please enter a valid messsage"
+              />
               <br />
               <div id="success"></div>
               <div className="form-group">
@@ -78,7 +58,7 @@ function Contact() {
                   Send
                 </button>
               </div>
-            </form>
+            </Form>
           </div>
         </div>
       </div>
