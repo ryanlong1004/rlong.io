@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/main.scss";
+import { Input } from "./Input";
 
 function Contact() {
   return (
@@ -28,21 +29,14 @@ function Contact() {
               data-netlify="true"
             >
               <input type="hidden" name="form-name" value="contact" />
-              <div className="control-group">
-                <div className="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Name</label>
-                  <input
-                    className="form-control"
-                    id="name"
-                    name="Name"
-                    type="text"
-                    placeholder="Name"
-                    required="required"
-                    data-validation-required-message="Please enter your name."
-                  />
-                  <p className="help-block text-danger"></p>
-                </div>
-              </div>
+              <Input
+                label="Name"
+                id="name"
+                type="text"
+                placeholder="Name"
+                required={true}
+                validationMessage="Please enter your name"
+              />
               <div className="control-group">
                 <div className="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Email Address</label>
