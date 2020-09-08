@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/main.scss";
+import { Divider } from "../custom/Components";
 import { Form, Input, Email, TextArea } from "../forms/Components";
 
 function Contact() {
@@ -11,13 +12,7 @@ function Contact() {
           Contact Me
         </h2>
         {/* <!-- Icon Divider--> */}
-        <div className="divider-custom">
-          <div className="divider-custom-line"></div>
-          <div className="divider-custom-icon">
-            <i className="fas fa-paper-plane"></i>
-          </div>
-          <div className="divider-custom-line"></div>
-        </div>
+        <Divider icon="fa-paper-plane" />
         {/* <!-- Contact Section Form--> */}
         <div className="row">
           <div className="col-lg-8 mx-auto">

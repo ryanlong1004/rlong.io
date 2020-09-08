@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/main.scss";
 
 import { Item, Modal } from "./Item";
+import { Divider } from "../custom/Components";
 
 function Portfolio() {
   return (
@@ -12,13 +13,7 @@ function Portfolio() {
           Portfolio
         </h2>
         {/* <!-- Icon Divider--> */}
-        <div className="divider-custom">
-          <div className="divider-custom-line"></div>
-          <div className="divider-custom-icon">
-            <i class="fas fa-suitcase"></i>
-          </div>
-          <div className="divider-custom-line"></div>
-        </div>
+        <Divider icon="fa-suitcase" />
         {/* <!-- Portfolio Grid Items--> */}
         <div className="row">
           <Item data={{ name: "cabin.png" }} />
