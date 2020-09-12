@@ -77,12 +77,34 @@ header {
     color: $white !important;
 }
 
-#tagline {
+#tagline-container {
+    border: 1px solid white;
+    border-radius: 5px;
+    border-top: 2.5em solid white;
+    background-color: $gray-opaque;
+    color: $terminal-green;
     margin-left: 3vw;
+    width: 40em;
+    height: 22em;
+}
+
+#tagline-container::before {
+    content: url(../components/header/img/terminal_icon.png);
+    color: $white;
+    font-size: 1.50em;
+    background-color: $white;
+    position: relative;
+    z-index: 1000;
+    left: -12em;
+    top: -1.5em;
+}
+
+#tagline {
     text-align: left;
+    margin: .01em 1.5em;
 }
 
 .typed-line {
-    font-size: 2em;
+    font-size: 1.75em;
     font-family: monospace;
 }

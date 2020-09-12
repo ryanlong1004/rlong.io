@@ -3,8 +3,8 @@ import { createTextContainer } from "./elements";
 
 const typingSimulator = async (target: Node, text: string) => {
   const second = 1000;
-  const sentenceDelay = 3 * second;
-  const initialDelay = 3 * second;
+  const sentenceDelay = 2 * second;
+  const initialDelay = 2 * second;
 
   await sleep(initialDelay);
   for (let i = 0; i < text.length; i++) {

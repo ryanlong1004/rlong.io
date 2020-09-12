@@ -15,6 +15,7 @@ class Header extends React.Component {
     var input = document.getElementById("tagline");
     var text = [
       "Hello, my name is Ryan...",
+      "Let's create a website...",
       "Let's automate repetitive tasks...",
       "Let's mine data to find insights...",
       "Let's make ideas a reality...",
@@ -28,9 +29,11 @@ class Header extends React.Component {
       <header className="masthead text-white">
         <Navbar />
         <div className="container-fluid d-flex align-items-start">
-          <div id="tagline" style={{ display: "block" }}>
-            <div id="blinker" className="blink">
-              &#9646;
+          <div id="tagline-container">
+            <div id="tagline" style={{ display: "block" }}>
+              <div id="blinker" className="blink">
+                &#9646;
+              </div>
             </div>
           </div>
 
