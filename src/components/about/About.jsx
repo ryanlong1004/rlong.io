@@ -3,7 +3,8 @@ import "../../styles/main.scss";
 
 function About() {
   return (
-    <section className="page-section bg-primary text-white mb-0" id="about">
+    <div id="about">
+    <section className="page-section bg-primary text-white mb-0">
       <div className="container">
         {/* <!-- About Section Heading--> */}
         <h2 className="page-section-heading text-center text-uppercase text-white">
@@ -53,7 +54,8 @@ function About() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+      </div>
   );
 }
 

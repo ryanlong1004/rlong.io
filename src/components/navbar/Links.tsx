@@ -8,7 +8,7 @@ interface JumpLinkProps {
 function JumpLink(props: JumpLinkProps) {
   return (
     <li className="nav-item mx-0">
-      <a className="nav-link mx-3 js-scroll-trigger" href={"#" + props.name}>
+      <a className="nav-link mx-3" href={"#" + props.name}>
         {props.name}
       </a>
     </li>
@@ -23,7 +23,7 @@ interface LinkProps {
 function Link(props: LinkProps) {
   return (
     <li className="nav-item mx-0">
-      <a className="nav-link mx-3 js-scroll-trigger" href={props.href}>
+      <a className="nav-link mx-3" href={props.href}>
         {props.name}
       </a>
     </li>

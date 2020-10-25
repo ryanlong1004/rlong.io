@@ -26,7 +26,7 @@ class Navbar extends React.Component {
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
-                <JumpLink name="portfolio"></JumpLink>
+                {/* <JumpLink name="portfolio"></JumpLink> */}
                 <JumpLink name="about"></JumpLink>
                 <JumpLink name="contact"></JumpLink>
                 <Link name="resume" href={resume} target="blank"></Link>
@@ -42,7 +42,7 @@ class Navbar extends React.Component {
 function BodyNav(props) {
   return (
     <a
-      className="navbar-brand navbar-expand js-scroll-trigger"
+      className="navbar-brand navbar-expand"
       href="#page-top"
     >
       <img className="navbar-logo" src={logo} alt="logo"></img>
