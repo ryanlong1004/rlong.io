@@ -16,10 +16,6 @@ interface Feature {
 
 class Plan extends React.Component<PlanProps> {
 
-  constructor(props: any) { 
-    super(props);
-  }
-
   render() {
     return (
       <div className="col-lg-4">
@@ -29,7 +25,7 @@ class Plan extends React.Component<PlanProps> {
             <PlanCost cost={this.props.cost} />
             <hr />
             <PlanFeatures features={this.props.features} />
-            <a href="#" className="btn btn-block btn-primary text-uppercase">
+            <a href="/" className="btn btn-block btn-primary text-uppercase">
               Button
             </a>
           </div>

@@ -7,7 +7,7 @@ class TypingSimulator {
   initialDelay: number;
   target: HTMLElement;
   text: string[];
-  blinker: HTMLElement = new Blinker();
+  blinker: HTMLElement;
 
   constructor(
     target: HTMLElement,
@@ -19,6 +19,7 @@ class TypingSimulator {
     this.target = target;
     this.sentenceDelay = sentenceDelay;
     this.initialDelay = initialDelay;
+    this.blinker = new Blinker();
     this.target.appendChild(this.blinker);
   }
 
