@@ -1,7 +1,6 @@
 import React from "react";
-import Navbar from "../navbar/Navbar.jsx";
 import "../../styles/main.scss";
-import { typingSimulator } from "../../js/typing_simulator";
+import { TypingSimulator } from "../../js/typing_simulator";
 
 class Header extends React.Component {
   constructor(props) {
@@ -21,13 +20,13 @@ class Header extends React.Component {
       "Let's make ideas a reality...",
       "Ready?",
     ];
-    typingSimulator(input, text);
+    const ts = new TypingSimulator(input, text);
+    ts.print();
   }
 
   render() {
     return (
       <header className="masthead text-white">
-        <Navbar />
         <div className="container-fluid d-flex align-items-start">
           <div id="tagline-container">
             <div id="tagline" style={{ display: "block" }}>
@@ -36,8 +35,6 @@ class Header extends React.Component {
               </div>
             </div>
           </div>
-
-          <div className="divider-custom-line"></div>
         </div>
       </header>
     );

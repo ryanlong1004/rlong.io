@@ -1,38 +1,11 @@
 import React from "react";
 import "../../styles/main.scss";
 import logo from "./img/rect_white_standard.png";
-import Link from "./Link.jsx";
+import { Link, JumpLink } from "./Links.tsx";
+import resume from "../../docs/resume.pdf";
 
 class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      headerDidMount: false,
-      isUserInHeader: false,
-    };
-  }
-
-  componentDidMount() {
-    // var navbar = document.getElementById("mainNav");
-    // window.onscroll = function () {
-    //   const limit = window.innerHeight * 0.9;
-    //   if (
-    //     document.body.scrollTop > limit ||
-    //     document.documentElement.scrollTop > limit
-    //   ) {
-    //     toggleNavState(false);
-    //     navbar.classList.remove("navbar-header");
-    //     navbar.classList.add("navbar-body");
-    //   } else {
-    //     toggleNavState(true);
-    //     navbar.classList.remove("navbar-body");
-    //     navbar.classList.add("navbar-header");
-    //   }
-    // };
-    // const toggleNavState = (bool) => {
-    //   this.setState({ isUserInHeader: bool });
-    // };
-  }
+  componentDidMount() {}
 
   render() {
     return (
@@ -41,25 +14,22 @@ class Navbar extends React.Component {
           className="navbar navbar-expand-lg text-uppercase fixed-top navbar-body"
           id="mainNav"
         >
-          <Nav isUserInHeader={this.state.isUserInHeader} />
+          <BodyNav />
           <div className="container-fluid">
             <button
               className="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary rounded"
               type="button"
               data-toggle="collapse"
-              // data-target="#navbarResponsive"
-              // aria-controls="navbarResponsive"
-              // aria-expanded="false"
               aria-label="Toggle navigation"
             >
               <i className="fas fa-bars"></i>
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
-                <Link name="portfolio"></Link>
-                <Link name="about"></Link>
-                <Link name="contact"></Link>
-                <Link name="resume"></Link>
+                <JumpLink name="portfolio"></JumpLink>
+                <JumpLink name="about"></JumpLink>
+                <JumpLink name="contact"></JumpLink>
+                <Link name="resume" href={resume} target="blank"></Link>
               </ul>
             </div>
           </div>
@@ -67,21 +37,6 @@ class Navbar extends React.Component {
       </div>
     );
   }
-}
-
-function Nav(props) {
-  return props.isUserInHeader ? HeaderNav() : BodyNav();
-}
-
-function HeaderNav(props) {
-  return (
-    <a
-      className="navbar-brand navbar-expand js-scroll-trigger"
-      href="#page-top"
-    >
-      rlong.io
-    </a>
-  );
 }
 
 function BodyNav(props) {

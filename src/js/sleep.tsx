@@ -1,9 +1,11 @@
-const sleep = (ms: number) => {
+import { Resolver } from "dns";
+
+const sleep = function (ms: number): Promise<Resolver> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-const randomMSDelay = () => {
+const randomMSDelay = function (): number {
   return Math.random() * 250;
 };
 
-export { sleep, randomMSDelay }
+export { sleep, randomMSDelay };

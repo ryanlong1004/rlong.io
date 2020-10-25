@@ -1,20 +1,10 @@
 .navbar {
-    background-color: transparent;
+    background-color: $white;
 }
 
-.navbar-brand {
-    font-family: permanent_marker;
-    font-size: 2em !important;
-    letter-spacing: 0.2em;
-    text-transform: lowercase;
-}
 
 .navbar-logo {
     height: 40px;
-}
-
-#mainNav {
-    transition: background-color 0.5s ease;
 }
 
 #mainNav.navbar-header {

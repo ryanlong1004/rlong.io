@@ -49,9 +49,7 @@ function About() {
               throughout my career, but I believe that my most defining
               characteristics can be expressed in one sentence.{" "}
             </p>
-            <p>
-              <h3>Every day I strive to be a better engineer.</h3>
-            </p>
+            <h3>Every day I strive to be a better engineer.</h3>
           </div>
         </div>
       </div>

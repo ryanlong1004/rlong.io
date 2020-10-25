@@ -1,16 +1,19 @@
 import React from 'react';
-import Header from "./components/header/Header.jsx"
-import Portfolio from "./components/portfolio/Portfolio.jsx"
-import About from "./components/about/About.jsx"
-import Contact from "./components/contact/Contact.jsx"
-import { Footer, Copyright, ScrollTop } from "./components/footer/Footer.jsx"
+import Header from "./components/header/Header"
+import Pricing from "./components/pricing/Pricing"
+import About from "./components/about/About"
+import Contact from "./components/contact/Contact"
+import Navbar from "./components/navbar/Navbar"
+
+import { Footer, Copyright, ScrollTop } from "./components/footer/Footer"
 import './styles/main.scss';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Header />
-      <Portfolio />
+      {/* <Pricing /> */}
       <About />
       <Contact />
       <Footer />
