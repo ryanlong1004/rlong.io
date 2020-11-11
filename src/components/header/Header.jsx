@@ -10,30 +10,20 @@ class Header extends React.Component {
 
   componentDidMount() {
     this.setState({ headerDidMount: true });
-
-    var input = document.getElementById("tagline");
-    var text = [
-      "Hello, my name is Ryan...",
-      "Let's create a website...",
-      "Let's automate repetitive tasks...",
-      "Let's mine data to find insights...",
-      "Let's make ideas a reality...",
-      "Ready?",
-    ];
-    const ts = new TypingSimulator(input, text);
-    ts.print();
   }
 
   render() {
     return (
-      <header className="masthead text-white">
-        <div className="container-fluid d-flex align-items-start">
-          <div id="tagline-container">
-            <div id="tagline" style={{ display: "block" }}>
-              <div id="blinker" className="blink">
-                &#9646;
-              </div>
-            </div>
+      <header className="text-white">
+        <div className="container-fluid d-flex align-items-start"></div>
+        <div class="row" style={{
+          "padding-top": "100px"
+        }}>
+          <div class="col-12">
+            <h1>Unlock your business reach with a complete, affordable Web Site.</h1>
+          </div>
+          <div class="col-12">
+            
           </div>
         </div>
       </header>

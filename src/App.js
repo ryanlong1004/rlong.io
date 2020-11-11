@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from "./components/header/Header"
 // import Pricing from "./components/pricing/Pricing"
-import About from "./components/about/About"
+import { Discord } from "./components/discord/Discord"
+import { About } from "./components/about/About"
 import Contact from "./components/contact/Contact"
 import Navbar from "./components/navbar/Navbar"
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Header />
       {/* <Pricing /> */}
+      {/* <Discord /> */}
       <About />
       <Contact />
       <Footer />
