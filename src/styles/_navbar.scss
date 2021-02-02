@@ -4,7 +4,7 @@
 
 
 .navbar-logo {
-    height: 40px;
+    max-height: 40px;
 }
 
 #mainNav.navbar-header {
@@ -45,20 +45,22 @@
 }
 
 #mainNav.navbar-body {
-    background-color: $white;
-    border-bottom: 1px solid $gray-opaque;
+    background-color: $opaque;
+    border-bottom: 1px solid $opaque-dark-gray;
+
+    padding: 1% 2%;
 
 
     .navbar-nav {
         li.nav-item {
             a.nav-link {
                 position: relative;
-                color: $black;
+                color: $white;
                 text-decoration: none;
             }
 
             a.nav-link:hover {
-                color: $black;
+                color: $white;
             }
 
             a.nav-link::before {
