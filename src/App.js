@@ -1,13 +1,13 @@
-import React from 'react';
-import Header from "./components/header/Header"
+import React from "react";
+import Header from "./components/header/Header";
 // import Pricing from "./components/pricing/Pricing"
-import { Discord } from "./components/discord/Discord"
-import { About } from "./components/about/About"
-import Contact from "./components/contact/Contact"
-import Navbar from "./components/navbar/Navbar"
+import Calendly from "./components/calendly/Calendly";
+import { About } from "./components/about/About";
+import Contact from "./components/contact/Contact";
+import Navbar from "./components/navbar/Navbar";
 
-import { Footer, Copyright, ScrollTop } from "./components/footer/Footer"
-import './styles/main.scss';
+import { Footer, Copyright, ScrollTop } from "./components/footer/Footer";
+import "./styles/main.scss";
 
 function App() {
   return (
@@ -18,6 +18,12 @@ function App() {
       {/* <Discord /> */}
       <About />
       <Contact />
+
+      <div className="row">
+        <Calendly />
+      </div>
+
+
       <Footer />
       <Copyright />
       <ScrollTop />

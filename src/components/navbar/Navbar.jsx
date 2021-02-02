@@ -5,7 +5,7 @@ import { Link, JumpLink } from "./Links.tsx";
 import resume from "../../docs/resume.pdf";
 
 class Navbar extends React.Component {
-  componentDidMount() {}
+  componentDidMount() { }
 
   render() {
     return (
@@ -28,6 +28,7 @@ class Navbar extends React.Component {
               <ul className="navbar-nav ml-auto">
                 {/* <JumpLink name="portfolio"></JumpLink> */}
                 <JumpLink name="about"></JumpLink>
+                <JumpLink name="mentoring"></JumpLink>
                 <JumpLink name="contact"></JumpLink>
                 <Link name="resume" href={resume} target="blank"></Link>
               </ul>
