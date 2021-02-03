@@ -2,7 +2,7 @@
 import React from "react";
 import "../../styles/main.scss";
 import { jsx } from "@emotion/react";
-// import styled from "@emotion/styled";
+import { Grid, Paper } from '@material-ui/core';
 
 
 
@@ -29,13 +29,17 @@ class Calendly extends React.Component {
 
   render() {
     return (
-      <div className="col" style={{ minHeight: "670px" }}>
-          <div
-            className="calendly-inline-widget"
-            data-url="https://calendly.com/ryanlong1004/30min"
-            style={{ height: "670px" }}
-          ></div>
-        </div>
+      <Grid container spacing={2} justify="center">
+        <Grid item xs={12}>
+          <Paper>
+            <div
+              className="calendly-inline-widget"
+              data-url="https://calendly.com/rlongio/introduction"
+              style={{ height: "670px" }}
+            ></div>
+          </Paper>
+        </Grid>
+      </Grid>
     );
   }
 }
