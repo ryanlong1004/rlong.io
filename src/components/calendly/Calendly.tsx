@@ -1,10 +1,7 @@
-/** @jsx jsx */
 import React from "react";
 import "../../styles/main.scss";
 import { jsx } from "@emotion/react";
-import { Grid, Paper } from '@material-ui/core';
-
-
+import { Grid, Paper } from "@material-ui/core";
 
 // const Container = styled("div")`
 //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
@@ -18,7 +15,7 @@ import { Grid, Paper } from '@material-ui/core';
 // `;
 
 class Calendly extends React.Component {
-  constructor(props) {
+  constructor(props: any) {
     super(props);
     this.state = { headerDidMount: false };
   }
@@ -34,7 +31,7 @@ class Calendly extends React.Component {
           <Paper>
             <div
               className="calendly-inline-widget"
-              data-url="https://calendly.com/rlongio/introduction"
+              data-url={"https://calendly.com/rlongio/introduction"}
               style={{ height: "670px" }}
             ></div>
           </Paper>
@@ -45,4 +42,3 @@ class Calendly extends React.Component {
 }
 
 export default Calendly;
-
