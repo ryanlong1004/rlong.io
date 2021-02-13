@@ -1,7 +1,6 @@
+import { Grid, Paper } from "@material-ui/core";
 import React from "react";
 import "../../styles/main.scss";
-import { jsx } from "@emotion/react";
-import { Grid, Paper } from "@material-ui/core";
 
 // const Container = styled("div")`
 //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
