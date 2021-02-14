@@ -1,6 +1,6 @@
 import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
-import ListItem, { ListItemProps } from "@material-ui/core/ListItem";
+import ListItem from "@material-ui/core/ListItem";
 import { makeStyles } from "@material-ui/core/styles";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import clsx from "clsx";
