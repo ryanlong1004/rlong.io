@@ -59,8 +59,8 @@ export default function Hero() {
           Ryan Long
         </Typography>
         <Typography
-          component="h4"
-          variant="h5"
+          component="h2"
+          variant="h3"
           align="left"
           color="textPrimary"
           gutterBottom

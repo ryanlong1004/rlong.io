@@ -1,5 +1,7 @@
-import React from "react";
-import Album from "./components/album/Album";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Footer from "./components/Footer"
+import { default as React } from "react";
+import Hero from "./components/Hero";
 import "./styles/main.scss";
 
 
@@ -8,7 +10,11 @@ import "./styles/main.scss";
 function App() {
   return (
     <div className="App">
-      <Album></Album>
+      <CssBaseline />
+      <main>
+        <Hero />
+      </main>
+      <Footer />
     </div>
   );
 }
