@@ -25,24 +25,20 @@ export default function SocialList({ spacing }: SocialListProps) {
         </Grid>
         <Grid item>
           <label>
-            <Link href={"https://www.linkedin.com/in/rlongio/"}>
+            <Link href={"https://www.linkedin.com/in/ryanlong1004/"}>
               <LinkedInIcon fontSize="large"></LinkedInIcon>
             </Link>
           </label>
         </Grid>
         <Grid item>
           <label>
-            <Link href={"https://github.com/rlongio"}>
+            <Link href={"https://github.com/ryanlong1004"}>
               <GitHubIcon fontSize="large"></GitHubIcon>
             </Link>
           </label>
         </Grid>
         <Grid item>
-          <label>
-            <Link href={"https://calendly.com/rlongio/introduction"}>
-              <ScheduleIcon fontSize="large"></ScheduleIcon>
-            </Link>
-          </label>
+          <label></label>
         </Grid>
       </Grid>
     </React.Fragment>
