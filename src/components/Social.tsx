@@ -25,7 +25,7 @@ export default function SocialList({ spacing }: SocialListProps) {
         </Grid>
         <Grid item>
           <label>
-            <Link href={"https://www.linkedin.com/in/ryanlong1004/"}>
+            <Link href={"https://www.linkedin.com/in/rlongdev/"}>
               <LinkedInIcon fontSize="large"></LinkedInIcon>
             </Link>
           </label>
