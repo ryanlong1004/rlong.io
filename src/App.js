@@ -33,7 +33,7 @@ function App() {
         <meta property='og:description' content='Ryan Long is a Software Engineer from the United States with nearly 10 years of experience in Front and Back end technologies' />
         <meta property='og:image' content='https://pbs.twimg.com/profile_images/1360428892327186439/rhOQTKuF_400x400.png' />
         <meta property='og:url' content='rlong.io' />
-        <meta property='og:site_name' content='rlong.io' />
+        <meta property='og:site_name' content='rlong.io' /> 
         {/* Twitter */}
         <meta name='twitter:title' content='Ryan Long - Software Engineer' />
         <meta name='twitter:description' content='Ryan Long is a Software Engineer from the United States with nearly 10 years of experience in Front and Back end technologies' />
